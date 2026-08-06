@@ -1,0 +1,52 @@
+name: dattpro
+description: "Datt Patel — iOS & Flutter Developer Portfolio"
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.5.0
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # State Management
+  flutter_riverpod: ^2.6.1
+  riverpod_annotation: ^2.3.5
+
+  # Routing
+  go_router: ^14.6.2
+
+  # Animations
+  flutter_animate: ^4.5.0
+
+  # Fonts & Icons
+  google_fonts: ^6.2.1
+  font_awesome_flutter: ^10.8.0
+  cupertino_icons: ^1.0.8
+
+  # URL Handling
+  url_launcher: ^6.3.1
+
+  # Responsive
+  responsive_framework: ^1.5.1
+
+  # Scroll Visibility
+  visibility_detector: ^0.4.0+2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+  build_runner: ^2.4.13
+  riverpod_generator: ^2.4.3
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/images/
+    - assets/icons/
+
+  # Fonts loaded via google_fonts package (Inter, Fira Code)
+  # Drop custom .ttf files into assets/fonts/ and register here if needed
