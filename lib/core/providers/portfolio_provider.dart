@@ -122,7 +122,7 @@ final List<ProjectModel> _projects = [
       'Flutter', 'Swift', 'SQLite', 'Firebase', 'REST APIs',
     ],
     categories: [ProjectCategory.flutter, ProjectCategory.ios, ProjectCategory.school],
-    role: 'Senior Mobile Developer',
+    role: 'Mobile Developer',
     accentColor: AppColors.appleGreen,
     icon: Icons.school,
     isFeatured: true,
@@ -317,45 +317,92 @@ final List<SkillModel> _skills = [
 // ── Experience ────────────────────────────────────────────────────────────
 final List<ExperienceModel> _experiences = [
   ExperienceModel(
-    company: 'Enterprise Mobile Solutions', // 📝 Update with real company
-    role: 'Senior iOS & Flutter Developer',
+    company: 'Elsner Technology LTD',
+    role: 'iOS & Flutter Developer',
     duration: '2+ Years',
-    startDate: 'Jan 2023',
+    startDate: 'June 2024',
     endDate: 'Present',
     isCurrent: true,
-    location: 'India (Remote)',
+    location: 'Ahmedabad, India',
     description:
-        'Leading mobile development for enterprise clients across events, education, '
-        'and inventory management verticals.',
+    'Developing and maintaining production-grade iOS and Flutter applications '
+        'for enterprise clients across event management, education, AI, and inventory '
+        'management domains. Responsible for mobile architecture, feature development, '
+        'API integration, offline data management, third-party SDK integration, '
+        'performance optimization, and App Store deployment.',
     responsibilities: [
-      'Architected and delivered 8+ production mobile applications',
-      'Led iOS development with Swift, SwiftUI, and UIKit',
-      'Built cross-platform Flutter apps for iOS & Android',
-      'Integrated Firebase, REST APIs, and Socket.IO for real-time features',
-      'Implemented offline-first architecture with SQLite sync',
-      'Managed App Store submission and release cycles',
+      'Designed and developed production-ready iOS applications using Swift, SwiftUI, UIKit, and Objective-C',
+      'Built cross-platform Flutter applications for iOS and Android',
+      'Developed enterprise event management applications with modules for sessions, speakers, exhibitors, products, networking, surveys, and check-in',
+      'Integrated REST APIs, Firebase, Socket.IO, Mapbox, and third-party SDKs',
+      'Implemented offline-first functionality using SQLite with data synchronization',
+      'Worked with Agentic AI concepts including AI agents, LLM integrations, prompt engineering, API-based AI workflows, and intelligent automation',
+      'Implemented real-time features using socket-based communication',
+      'Optimized application performance, API calls, database operations, and UI responsiveness',
+      'Worked with CocoaPods and Swift Package Manager for dependency management',
+      'Handled App Store Connect, provisioning, certificates, build configuration, and production releases',
+      'Investigated and resolved production bugs, crashes, UI issues, and App Store submission problems',
+      'Collaborated with backend developers, designers, QA engineers, and project managers to deliver production features',
     ],
-    technologies: ['Swift', 'SwiftUI', 'Flutter', 'Firebase', 'SQLite', 'REST APIs'],
+    technologies: [
+      'Swift',
+      'Objective-C',
+      'SwiftUI',
+      'UIKit',
+      'Flutter',
+      'Dart',
+      'Firebase',
+      'SQLite',
+      'REST APIs',
+      'Socket.IO',
+      'Mapbox',
+      'Agentic AI',
+      'LLM APIs',
+      'CocoaPods',
+      'Swift Package Manager',
+      'Git',
+      'Xcode',
+      'App Store Connect',
+    ],
   ),
+
   ExperienceModel(
-    company: 'Mobile Development Studio', // 📝 Update with real company
-    role: 'iOS Developer',
-    duration: '1+ Year',
-    startDate: 'Jun 2022',
-    endDate: 'Dec 2022',
+    company: 'Elsner Technology LTD',
+    role: 'iOS Intern',
+    duration: '0.5+ Year',
+    startDate: 'January 2024',
+    endDate: 'June 2024',
     isCurrent: false,
-    location: 'India',
+    location: 'Ahmedabad, India',
     description:
-        'Developed iOS applications and contributed to cross-platform projects '
-        'using Objective-C and Swift.',
+    'Started my professional iOS development journey by contributing to '
+        'production mobile applications and learning industry-standard development '
+        'practices. Worked primarily with Swift, Objective-C, UIKit, APIs, SQLite, '
+        'and third-party SDK integrations while collaborating with senior developers '
+        'and the development team.',
     responsibilities: [
-      'Built UIKit-based iOS applications from scratch',
-      'Maintained and upgraded Objective-C legacy codebases',
-      'Integrated third-party SDKs including Mapbox and payment gateways',
-      'Collaborated with UI/UX designers to implement pixel-perfect interfaces',
-      'Wrote unit tests and participated in code reviews',
+      'Developed and maintained iOS applications using Swift, Objective-C, and UIKit',
+      'Implemented application screens and user interfaces based on UI/UX designs',
+      'Worked with REST APIs to fetch, process, and display application data',
+      'Maintained and enhanced existing Objective-C codebases',
+      'Integrated third-party SDKs and libraries including Mapbox',
+      'Worked with SQLite for local data storage and offline functionality',
+      'Fixed UI issues, bugs, crashes, and application performance problems',
+      'Learned iOS application architecture, debugging, memory management, and development best practices',
+      'Collaborated with senior developers, designers, and QA engineers',
+      'Participated in code reviews, testing, debugging, and application release activities',
     ],
-    technologies: ['Swift', 'Objective-C', 'UIKit', 'Mapbox', 'SQLite'],
+    technologies: [
+      'Swift',
+      'Objective-C',
+      'UIKit',
+      'REST APIs',
+      'SQLite',
+      'Mapbox',
+      'Xcode',
+      'CocoaPods',
+      'Git',
+    ],
   ),
 ];
 
