@@ -305,7 +305,8 @@ class _ContactSectionState extends State<ContactSection> {
                 prefixIcon: Icon(Icons.message_outlined, size: 20),
                 alignLabelWithHint: true,
               ),
-              maxLines: 5,
+              minLines: 1,
+              maxLines: null,
               validator: (v) =>
                   v == null || v.isEmpty ? 'Please enter a message' : null,
             ),
