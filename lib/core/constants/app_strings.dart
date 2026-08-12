@@ -10,32 +10,40 @@ class AppStrings {
   static const String tagline = 'iOS & Flutter Developer';
   static const String heroGreeting = 'Hello 👋';
   static const String heroIntro = "I'm Datt Patel";
-  static const String yearsExp = '3+';
+  static const String yearsExp = '2.7+';
   static const String location = 'India';
 
   // ── Contact ───────────────────────────────────────────────────────────────
-  static const String email = 'datt.patel@example.com'; // 📝 Update this
-  static const String phone = '+91 XXXXX XXXXX';         // 📝 Update this
-  static const String github = 'https://github.com/dattpatel'; // 📝 Update
+  static const String email = 'pateldatt81@gmail.com'; // 📝 Update this
+  static const String phone = '+91 6353555731';         // 📝 Update this
+  static const String github = 'https://github.com/datt18'; // 📝 Update
   static const String linkedin = 'https://linkedin.com/in/dattpatel'; // 📝 Update
   static const String portfolio = 'https://dattpatel.dev'; // 📝 Update
-  static const String resumeUrl = ''; // 📝 Add Google Drive / S3 URL
+  static const String resumeUrl = 'https://drive.google.com/file/d/1V_PAdKxjaV6CRkiqUPKIC9eadUEJGOSZ/view?usp=sharing'; // 📝 Add Google Drive / S3 URL
 
   // ── Typing Roles ──────────────────────────────────────────────────────────
   static const List<String> typingRoles = [
     'iOS Developer',
     'Flutter Developer',
     'SwiftUI Engineer',
+    'UIKit Engineer',
+    'Agentic AI Developer',
+    'AI Integration Engineer',
     'Mobile Architect',
     'App Store Expert',
   ];
 
   // ── Summary ───────────────────────────────────────────────────────────────
   static const String summary =
-      'Passionate iOS & Flutter Developer with 3+ years of experience building '
+      'Passionate iOS & Flutter Developer with 2.7+ years of experience building '
       'high-performance mobile applications for enterprise clients worldwide. '
-      'Specialized in Swift, SwiftUI, UIKit, and Flutter — from architecture '
-      'to App Store deployment. I craft apps that millions of users love.';
+      'Specialized in Swift, SwiftUI, UIKit, and Flutter, with hands-on knowledge '
+      'of Agentic AI, AI agents, LLM integrations, prompt engineering, AI-powered '
+      'workflows, and intelligent automation. Experienced in integrating AI '
+      'capabilities into mobile applications and building solutions that connect '
+      'AI agents with APIs, data, and real-world business workflows. From '
+      'architecture and development to AI integration and App Store deployment, '
+      'I focus on building scalable, intelligent, and user-focused applications.';
 
   // ── Hero Buttons ──────────────────────────────────────────────────────────
   static const String downloadResume = 'Download Resume';
@@ -58,7 +66,7 @@ class AppStrings {
   static const String aboutSubtitle = 'My Professional Story';
   static const String aboutDescription =
       'I started my journey as an iOS developer with a deep love for Apple\'s '
-      'ecosystem and clean, purposeful design. Over 3+ years, I\'ve evolved into '
+      'ecosystem and clean, purposeful design. Over 2.7+ years, I\'ve evolved into '
       'a full-stack mobile developer — building enterprise-grade applications '
       'that serve thousands of users across events, education, AI, and inventory '
       'management domains.\n\n'
@@ -67,9 +75,9 @@ class AppStrings {
 
   // ── Statistics ────────────────────────────────────────────────────────────
   static const List<Map<String, String>> stats = [
-    {'value': '3+', 'label': 'Years Experience', 'suffix': ''},
-    {'value': '20', 'label': 'Apps Delivered', 'suffix': '+'},
-    {'value': '10', 'label': 'Enterprise Clients', 'suffix': '+'},
+    {'value': '2+', 'label': 'Years Experience', 'suffix': ''},
+    {'value': '110+', 'label': 'Apps Delivered', 'suffix': '+'},
+    {'value': '110+', 'label': 'AppStore Apps Live', 'suffix': '+'},
     {'value': '100', 'label': 'Users Served', 'suffix': 'K+'},
   ];
 
