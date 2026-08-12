@@ -10,7 +10,6 @@ import '../../core/providers/portfolio_provider.dart';
 import '../../widgets/section_header.dart';
 import '../../widgets/animated_counter.dart';
 import '../../widgets/glass_card.dart';
-import '../../widgets/particle_background.dart';
 
 class AboutSection extends ConsumerStatefulWidget {
   const AboutSection({super.key});
@@ -35,14 +34,53 @@ class _AboutSectionState extends ConsumerState<AboutSection> {
         }
       },
       child: Container(
-        color: AppColors.sectionBg,
+        decoration: const BoxDecoration(
+          gradient: LinearGradient(
+            begin: Alignment.topLeft,
+            end: Alignment.bottomRight,
+            colors: [
+              Color(0xFF0D1117),
+              Color(0xFF161B22),
+              Color(0xFF0D1117),
+            ],
+          ),
+        ),
         child: Stack(
           children: [
-            // Subtle background
-            Positioned.fill(
-              child: GridBackground(
-                color: AppColors.border.withOpacity(0.5),
-                cellSize: 60,
+            // Blue glow — top left
+            Positioned(
+              top: -100,
+              left: -100,
+              child: Container(
+                width: 500,
+                height: 500,
+                decoration: BoxDecoration(
+                  shape: BoxShape.circle,
+                  gradient: RadialGradient(
+                    colors: [
+                      AppColors.appleBlue.withOpacity(0.08),
+                      Colors.transparent,
+                    ],
+                  ),
+                ),
+              ),
+            ),
+            // Purple glow — bottom right
+            Positioned(
+              bottom: -100,
+              right: -100,
+              child: Container(
+                width: 500,
+                height: 500,
+                decoration: BoxDecoration(
+                  shape: BoxShape.circle,
+                  gradient: RadialGradient(
+                    colors: [
+                      AppColors.applePurple.withOpacity(0.07),
+                      Colors.transparent,
+                    ],
+                  ),
+                ),
               ),
             ),
 

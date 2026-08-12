@@ -441,21 +441,9 @@ class _ProfileVisual extends StatelessWidget {
   }
 
   Widget _buildProfileImage() {
-    // Placeholder avatar — replace with actual image later
-    return Container(
-      decoration: const BoxDecoration(
-        gradient: LinearGradient(
-          colors: [Color(0xFF1A2A4A), Color(0xFF0D1B2A)],
-          begin: Alignment.topCenter,
-          end: Alignment.bottomCenter,
-        ),
-      ),
-      child: Column(
-        mainAxisAlignment: MainAxisAlignment.end,
-        children: [
-          Icon(Icons.person, size: size * 0.5, color: AppColors.appleBlue.withOpacity(0.5)),
-        ],
-      ),
+    return Image.asset(
+      'assets/images/profile_img.png',
+      fit: BoxFit.cover,
     );
   }
 
