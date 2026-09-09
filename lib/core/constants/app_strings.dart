@@ -17,9 +17,9 @@ class AppStrings {
   static const String email = 'pateldatt81@gmail.com'; // 📝 Update this
   static const String phone = '+91 6353555731';         // 📝 Update this
   static const String github = 'https://github.com/datt18'; // 📝 Update
-  static const String linkedin = 'https://linkedin.com/in/dattpatel'; // 📝 Update
-  static const String portfolio = 'https://dattpatel.dev'; // 📝 Update
-  static const String resumeUrl = 'https://drive.google.com/file/d/1V_PAdKxjaV6CRkiqUPKIC9eadUEJGOSZ/view?usp=sharing'; // 📝 Add Google Drive / S3 URL
+  static const String linkedin = 'https://www.linkedin.com/in/datt-patel-ios-developer'; // 📝 Update
+  static const String portfolio = 'https://datt18.github.io/dattPortfolio2026/'; // 📝 Update
+  static const String resumeUrl = 'https://drive.google.com/drive/folders/1y2XtVAurTBg2FWtnIiGRcQJb4EPM0lnv'; // 📝 Add Google Drive / S3 URL
 
   // ── Typing Roles ──────────────────────────────────────────────────────────
   static const List<String> typingRoles = [
