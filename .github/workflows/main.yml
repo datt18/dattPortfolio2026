@@ -27,7 +27,7 @@ jobs:
         run: flutter pub get
 
       - name: Build Flutter Web
-        run: flutter build web --release --base-href "/dattPro/"
+        run: flutter build web --release --base-href "/dattPortfolio2026/"
 
       - name: Setup GitHub Pages
         uses: actions/configure-pages@v5
