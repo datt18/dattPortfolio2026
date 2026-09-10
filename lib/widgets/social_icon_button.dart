@@ -3,7 +3,8 @@ import 'package:url_launcher/url_launcher.dart';
 import '../core/constants/app_colors.dart';
 
 class SocialIconButton extends StatefulWidget {
-  final IconData icon;
+  final IconData? icon;
+  final String? imagePath;
   final String url;
   final String tooltip;
   final Color? color;
@@ -11,12 +12,13 @@ class SocialIconButton extends StatefulWidget {
 
   const SocialIconButton({
     super.key,
-    required this.icon,
+    this.icon,
+    this.imagePath,
     required this.url,
     required this.tooltip,
     this.color,
     this.size = 20,
-  });
+  }) : assert(icon != null || imagePath != null);
 
   @override
   State<SocialIconButton> createState() => _SocialIconButtonState();
@@ -85,7 +87,9 @@ class _SocialIconButtonState extends State<SocialIconButton>
                     color: _isHovered ? iconColor.withOpacity(0.4) : AppColors.glassBorder,
                   ),
                 ),
-                child: Icon(widget.icon, color: iconColor, size: widget.size),
+                child: widget.imagePath != null
+                    ? Image.asset(widget.imagePath!, width: widget.size, height: widget.size)
+                    : Icon(widget.icon, color: iconColor, size: widget.size),
               ),
             ),
           ),

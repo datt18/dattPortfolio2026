@@ -103,6 +103,7 @@ class AppStrings {
 
   // ── Footer ────────────────────────────────────────────────────────────────
   // static const String footerTagline = 'Made with Flutter ❤️';
+  static const String footerTagline = ' ';
   static const String footerCopyright = '© 2026 Datt Patel. All rights reserved.';
   static const String backToTop = 'Back to Top';
 

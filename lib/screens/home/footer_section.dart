@@ -80,16 +80,15 @@ class _DesktopFooter extends StatelessWidget {
         Row(
           children: [
             SocialIconButton(
-              icon: Icons.code,
+              imagePath: 'assets/images/github_icon.png',
               url: AppStrings.github,
               tooltip: 'GitHub',
             ),
             const SizedBox(width: 12),
             SocialIconButton(
-              icon: Icons.work_outline,
+              imagePath: 'assets/images/linkedin_icon.png',
               url: AppStrings.linkedin,
               tooltip: 'LinkedIn',
-              color: const Color(0xFF0A66C2),
             ),
             const SizedBox(width: 12),
             SocialIconButton(
@@ -141,16 +140,15 @@ class _MobileFooter extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             SocialIconButton(
-              icon: Icons.code,
+              imagePath: 'assets/images/github_icon.png',
               url: AppStrings.github,
               tooltip: 'GitHub',
             ),
             const SizedBox(width: 12),
             SocialIconButton(
-              icon: Icons.work_outline,
+              imagePath: 'assets/images/linkedin_icon.png',
               url: AppStrings.linkedin,
               tooltip: 'LinkedIn',
-              color: const Color(0xFF0A66C2),
             ),
             const SizedBox(width: 12),
             SocialIconButton(
