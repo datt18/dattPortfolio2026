@@ -75,10 +75,10 @@ class AppStrings {
 
   // ── Statistics ────────────────────────────────────────────────────────────
   static const List<Map<String, String>> stats = [
-    {'value': '2+', 'label': 'Years Experience', 'suffix': ''},
+    {'value': '2', 'label': 'Years Experience', 'suffix': '+'},
     {'value': '110+', 'label': 'Apps Delivered', 'suffix': '+'},
     {'value': '110+', 'label': 'AppStore Apps Live', 'suffix': '+'},
-    {'value': '100K', 'label': 'Users Served', 'suffix': 'K+'},
+    {'value': '100', 'label': 'Users Served', 'suffix': 'K+'},
   ];
 
   // ── Skills Section ────────────────────────────────────────────────────────

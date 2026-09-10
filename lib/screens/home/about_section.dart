@@ -150,7 +150,7 @@ class _AboutSectionState extends ConsumerState<AboutSection> {
           crossAxisCount: 2,
           mainAxisSpacing: 16,
           crossAxisSpacing: 16,
-          childAspectRatio: 1.2,
+          childAspectRatio: 0.95,
         ),
         itemCount: stats.length,
         itemBuilder: (_, i) => StatCard(

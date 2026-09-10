@@ -84,8 +84,10 @@ class StatCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final screenWidth = MediaQuery.of(context).size.width;
+    final cardPadding = screenWidth < 600 ? 12.0 : 24.0;
     return Container(
-      padding: const EdgeInsets.all(24),
+      padding: EdgeInsets.all(cardPadding),
       decoration: BoxDecoration(
         color: AppColors.glassCard,
         borderRadius: BorderRadius.circular(16),
