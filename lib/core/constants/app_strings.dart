@@ -78,7 +78,7 @@ class AppStrings {
     {'value': '2', 'label': 'Years Experience', 'suffix': '+'},
     {'value': '110+', 'label': 'Apps Delivered', 'suffix': '+'},
     {'value': '110+', 'label': 'AppStore Apps Live', 'suffix': '+'},
-    {'value': '100', 'label': 'Users Served', 'suffix': 'K+'},
+    {'value': '10', 'label': 'Users Served', 'suffix': 'M+'},
   ];
 
   // ── Skills Section ────────────────────────────────────────────────────────
