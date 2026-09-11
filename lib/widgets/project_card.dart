@@ -23,6 +23,7 @@ class ProjectCard extends StatefulWidget {
 
 class _ProjectCardState extends State<ProjectCard> {
   bool _isHovered = false;
+  bool _featuresExpanded = false;
 
   Color get _accent => widget.project.accentColor;
 
@@ -195,7 +196,9 @@ class _ProjectCardState extends State<ProjectCard> {
   }
 
   Widget _buildFeatures() {
-    final displayed = widget.project.features.take(4).toList();
+    final all = widget.project.features;
+    final displayed = _featuresExpanded ? all : all.take(4).toList();
+    final remaining = all.length - 4;
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
@@ -207,8 +210,7 @@ class _ProjectCardState extends State<ProjectCard> {
           children: [
             ...displayed.map(
               (f) => Container(
-                padding:
-                    const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
+                padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
                 decoration: BoxDecoration(
                   color: AppColors.glassCard,
                   borderRadius: BorderRadius.circular(6),
@@ -217,18 +219,23 @@ class _ProjectCardState extends State<ProjectCard> {
                 child: Text(f, style: AppTextStyles.labelSm),
               ),
             ),
-            if (widget.project.features.length > 4)
-              Container(
-                padding:
-                    const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
-                decoration: BoxDecoration(
-                  color: _accent.withOpacity(0.08),
-                  borderRadius: BorderRadius.circular(6),
-                ),
-                child: Text(
-                  '+${widget.project.features.length - 4} more',
-                  style: AppTextStyles.labelSm
-                      .copyWith(color: _accent),
+            if (remaining > 0)
+              GestureDetector(
+                onTap: () => setState(() => _featuresExpanded = !_featuresExpanded),
+                child: Container(
+                  padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
+                  decoration: BoxDecoration(
+                    color: _accent.withOpacity(0.12),
+                    borderRadius: BorderRadius.circular(6),
+                    border: Border.all(color: _accent.withOpacity(0.3)),
+                  ),
+                  child: Text(
+                    _featuresExpanded ? 'Show less' : '+$remaining more',
+                    style: AppTextStyles.labelSm.copyWith(
+                      color: _accent,
+                      fontWeight: FontWeight.w600,
+                    ),
+                  ),
                 ),
               ),
           ],
