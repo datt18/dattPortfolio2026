@@ -246,30 +246,10 @@ final List<ProjectModel> _projects = [
     gradientStart: '#34C759',
     gradientEnd: '#248A3D',
   ),
-  ProjectModel(
-    id: 'stock_management',
-    title: 'Stock & Inventory Management',
-    shortDescription:
-        'Warehouse & inventory system with barcode scanning and offline sync.',
-    description:
-        'Developed inventory and warehouse management systems enabling businesses '
-        'to track stock, scan barcodes, generate reports, and sync data offline — '
-        'reducing inventory errors by over 80%.',
-    features: [
-      'Inventory Tracking',
-      'Barcode Scanner',
-      'Reports & Analytics',
-      'Sales Management',
-      'Purchase Orders',
-      'Offline Sync',
-      'Stock Alerts',
-      'Supplier Management',
-      'Export to Excel/PDF',
-    ],
-    technologies: [
-      'UIKit', 'Swift', 'SQLite', 'Firebase', 'REST APIs','websocket',
-    ],
-    categories: [ProjectCategory.flutter, ProjectCategory.ios, ProjectCategory.inventory],
+  ProjectModel( id: 'stock_trading', title: 'Stock Trading & Investment', shortDescription: 'Investment and stock trading platform for tracking markets, portfolios, and real-time stock prices.', description: 'Developed a stock investment and trading application that enables users ' 'to monitor market prices, manage investment portfolios, track watchlists, ' 'analyze stock performance, and receive real-time market updates.',
+    features: [ 'Live Stock Prices', 'Portfolio Management', 'Stock Watchlist', 'Buy & Sell Trading', 'Market Analytics', 'Stock Performance Charts', 'Investment Tracking', 'Profit & Loss Tracking', 'Price Alerts', 'Real-Time Updates', ],
+    technologies: [ 'SwiftUI', 'Swift', 'REST APIs', 'WebSocket', 'Firebase', 'SQLite', ],
+    categories: [ ProjectCategory.ai, ProjectCategory.ios, ],
     role: 'iOS Mobile Developer',
     accentColor: AppColors.appleOrange,
     icon: Icons.inventory_2,
