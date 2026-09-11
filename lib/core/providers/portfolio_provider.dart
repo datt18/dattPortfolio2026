@@ -48,12 +48,18 @@ final List<ProjectModel> _projects = [
       'Attendee Networking',
       'Live Polls & Surveys',
       'Offline Mode (SQLite sync)',
+      'Product Management',
       'QR Code Check-in',
       'Push Notifications',
-      'Real-time Chat (Socket.IO)',
+      'Live Data update (Socket.IO)',
+      'Live Auction & QA Polling',
+      'Lead Management',
+      'Map & Floorplan & ExpoFP',
+      'Gamification',
+
     ],
     technologies: [
-      'Swift', 'Objective-C', 'Flutter', 'UIKit', 'SQLite',
+      'Swift', 'Objective-C', 'CocoaPods', 'UIKit', 'SQLite',
       'Firebase', 'REST APIs', 'Mapbox', 'Socket.IO', 'SPM',
     ],
     categories: [
@@ -61,7 +67,7 @@ final List<ProjectModel> _projects = [
       ProjectCategory.flutter,
       ProjectCategory.enterprise,
     ],
-    role: 'Lead Mobile Developer',
+    role: 'iOS Mobile Developer',
     accentColor: AppColors.appleBlue,
     icon: Icons.event,
     isFeatured: true,
@@ -88,10 +94,10 @@ final List<ProjectModel> _projects = [
       'Conversation History',
     ],
     technologies: [
-      'Flutter', 'OpenAI API', 'Claude API', 'Firebase', 'REST APIs', 'Dart',
+      'N8N', 'OpenAI API', 'Claude API', 'Firebase', 'REST APIs',
     ],
     categories: [ProjectCategory.flutter, ProjectCategory.ai],
-    role: 'Flutter Developer & AI Integration',
+    role: 'Agentic AI & AI Integration',
     accentColor: AppColors.applePurple,
     icon: Icons.psychology,
     isFeatured: true,
@@ -119,12 +125,123 @@ final List<ProjectModel> _projects = [
       'Teacher Dashboard',
     ],
     technologies: [
-      'Flutter', 'Swift', 'SQLite', 'Firebase', 'REST APIs',
+      'SwiftUI', 'Swift', 'SQLite', 'Firebase', 'REST APIs',
     ],
     categories: [ProjectCategory.flutter, ProjectCategory.ios, ProjectCategory.school],
-    role: 'Mobile Developer',
+    role: 'iOS Mobile Developer',
     accentColor: AppColors.appleGreen,
     icon: Icons.school,
+    isFeatured: true,
+    gradientStart: '#34C759',
+    gradientEnd: '#248A3D',
+  ),
+  ProjectModel(
+    id: 'hrms_app',
+    title: 'HRMS App',
+    shortDescription:
+        'End-to-end HR management covering attendance, leave, payroll & employee workflows.',
+    description:
+        'Built a comprehensive Human Resource Management System for enterprises to '
+        'digitise and automate HR operations — from onboarding and attendance tracking '
+        'to payroll processing and leave approvals — with role-based access for employees, '
+        'managers, and HR admins.',
+    features: [
+      'Employee Directory & Profiles',
+      'Attendance Tracking (GPS / QR)',
+      'Leave Management & Approvals',
+      'Payroll Processing',
+      'Role-based Access Control',
+      'Push Notifications',
+      'Document Management',
+      'HR Dashboard & Analytics',
+      'Responsive UI (Mobile & Tablet)',
+    ],
+    technologies: [
+      'Flutter', 'Dart', 'Firebase', 'REST APIs', 'Riverpod',
+      'SQLite', 'Push Notifications',
+    ],
+    categories: [
+      ProjectCategory.flutter,
+      ProjectCategory.enterprise,
+      ProjectCategory.hrms,
+    ],
+    role: 'Flutter Developer',
+    accentColor: AppColors.appleBlue,
+    icon: Icons.people_alt,
+    isFeatured: true,
+    gradientStart: '#007AFF',
+    gradientEnd: '#0056B3',
+  ),
+  ProjectModel(
+    id: 'chat_app',
+    title: 'Chat App',
+    shortDescription:
+        'Real-time messaging with notifications, user profiles & secure communication.',
+    description:
+        'Developed a feature-rich real-time chat application with secure end-to-end '
+        'communication, instant push notifications, and rich media sharing. Built for '
+        'scalability with Firebase as the real-time backend and Socket.IO for live '
+        'presence and typing indicators.',
+    features: [
+      'Real-time Messaging (Socket.IO)',
+      'One-to-One & Group Chats',
+      'Push Notifications (FCM)',
+      'User Profiles & Avatars',
+      'Media Sharing (Images / Files)',
+      'Read Receipts & Typing Indicators',
+      'Secure Authentication (Firebase Auth)',
+      'Message Search & History',
+      'Responsive UI (Mobile & Tablet)',
+    ],
+    technologies: [
+      'Flutter', 'Dart', 'Firebase', 'Socket.IO', 'REST APIs',
+      'Riverpod', 'Push Notifications',
+    ],
+    categories: [
+      ProjectCategory.flutter,
+      ProjectCategory.enterprise,
+      ProjectCategory.chat,
+    ],
+    role: 'Flutter Developer',
+    accentColor: AppColors.applePurple,
+    icon: Icons.chat_bubble_rounded,
+    isFeatured: true,
+    gradientStart: '#AF52DE',
+    gradientEnd: '#7B2FBE',
+  ),
+  ProjectModel(
+    id: 'crm_app',
+    title: 'CRM App',
+    shortDescription:
+        'Customer management with leads, follow-ups, sales tracking & business workflows.',
+    description:
+        'Built a scalable Customer Relationship Management application enabling '
+        'sales teams to manage leads, track follow-ups, monitor pipelines, and '
+        'automate business workflows — with real-time dashboards and deep API '
+        'integration for seamless data sync.',
+    features: [
+      'Customer & Contact Management',
+      'Lead Pipeline & Tracking',
+      'Follow-up Reminders & Scheduling',
+      'Sales Analytics Dashboard',
+      'Business Workflow Automation',
+      'Push Notifications',
+      'Role-based Access Control',
+      'Reports & Export (PDF / Excel)',
+      'Responsive UI (Mobile & Tablet)',
+    ],
+    technologies: [
+      'Flutter', 'Dart', 'Firebase', 'REST APIs', 'Riverpod',
+      'SQLite', 'Push Notifications',
+    ],
+    categories: [
+      ProjectCategory.flutter,
+      ProjectCategory.enterprise,
+      ProjectCategory.crm,
+    ],
+    role: 'Flutter Developer',
+    accentColor: AppColors.appleGreen,
+    icon: Icons.business_center,
     isFeatured: true,
     gradientStart: '#34C759',
     gradientEnd: '#248A3D',
@@ -150,10 +267,10 @@ final List<ProjectModel> _projects = [
       'Export to Excel/PDF',
     ],
     technologies: [
-      'Flutter', 'Swift', 'SQLite', 'Firebase', 'REST APIs',
+      'UIKit', 'Swift', 'SQLite', 'Firebase', 'REST APIs','websocket',
     ],
     categories: [ProjectCategory.flutter, ProjectCategory.ios, ProjectCategory.inventory],
-    role: 'Mobile Developer',
+    role: 'iOS Mobile Developer',
     accentColor: AppColors.appleOrange,
     icon: Icons.inventory_2,
     isFeatured: false,

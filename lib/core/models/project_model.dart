@@ -8,6 +8,9 @@ enum ProjectCategory {
   ai,
   school,
   inventory,
+  hrms,
+  chat,
+  crm,
 }
 
 extension ProjectCategoryExt on ProjectCategory {
@@ -27,6 +30,12 @@ extension ProjectCategoryExt on ProjectCategory {
         return 'School';
       case ProjectCategory.inventory:
         return 'Inventory';
+      case ProjectCategory.hrms:
+        return 'HRMS';
+      case ProjectCategory.chat:
+        return 'Chat';
+      case ProjectCategory.crm:
+        return 'CRM';
     }
   }
 }
